@@ -12,17 +12,17 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button luckyAppBtn, greetingAppBtn, counterAppBtn;
+    Button luckyAppBtn, greetingAppBtn, counterAppBtn, frenchAppBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         luckyAppBtn = findViewById(R.id.lucky_app);
         greetingAppBtn = findViewById(R.id.greeting_app);
         counterAppBtn = findViewById(R.id.counter_app);
+        frenchAppBtn = findViewById(R.id.french_app);
 
         luckyAppBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +42,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 goToCounterApp();
+            }
+        });
+
+        frenchAppBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToFrenchTeacherApp();
             }
         });
     }
@@ -75,6 +82,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToCounterApp() {
         Intent intent = new Intent( getApplicationContext(), CounterActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToFrenchTeacherApp() {
+        Intent intent = new Intent( getApplicationContext(), FrenchTeacherActivity.class);
         startActivity(intent);
     }
 }

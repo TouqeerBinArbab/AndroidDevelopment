@@ -17,7 +17,7 @@
     <string name="say_hello">Say Hello!</string>
     <string name="name_hint">Enter your name</string>
     <string name="welcome_greeting">Welcome to Greeting App</string>
-<string name="welcome_counter_app">The Counter App</string>
+    <string name="welcome_counter_app">The Counter App</string>
     <string name="lucky_app">Lucky App</string>
     <string name="click_me">Click Me</string>
     <string name="default_counter">0</string>
@@ -64,4 +64,10 @@
     </string>
     <string name="search">Search</string>
     <string name="home">Home</string>
+    <string name="french_teacher_app">French Teacher App</string>
+    <string name="black">Black</string>
+    <string name="red">Red</string>
+    <string name="purple">Purple</string>
+    <string name="green">Green</string>
+    <string name="yellow">Yellow</string>
 </resources>
