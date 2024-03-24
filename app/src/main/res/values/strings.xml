@@ -14,8 +14,14 @@
     <string name="share_btn">Share my lucky number</string>
     <string name="luck_number_place_holder">888</string>
     <string name="greeting_app">Greeting App</string>
-
+    <string name="say_hello">Say Hello!</string>
+    <string name="name_hint">Enter your name</string>
+    <string name="welcme_greeting">Welcome to Greeting App</string>
+<string name="welcome_counter_app">The Counter App</string>
     <string name="lucky_app">Lucky App</string>
+    <string name="click_me">Click Me</string>
+    <string name="default_counter">0</string>
+    <string name="counter_app">Counter App</string>
 
     <string name="luck_hint">Please enter your name</string>
     <string name="lorem_ipsum">

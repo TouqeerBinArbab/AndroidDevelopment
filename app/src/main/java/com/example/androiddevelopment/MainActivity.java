@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button luckyAppBtn, greetingAppBtn;
+    Button luckyAppBtn, greetingAppBtn, counterAppBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         luckyAppBtn = findViewById(R.id.lucky_app);
         greetingAppBtn = findViewById(R.id.greeting_app);
+        counterAppBtn = findViewById(R.id.counter_app);
 
         luckyAppBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,8 +31,14 @@ public class MainActivity extends AppCompatActivity {
                 goToGreetingApp();
             }
         });
-    }
 
+        counterAppBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToCounterApp();
+            }
+        });
+    }
 
     public void goToLuckyApp() {
         Intent intent = new Intent( getApplicationContext(), LuckyActivity.class);
@@ -43,4 +50,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToCounterApp() {
+        Intent intent = new Intent( getApplicationContext(), CounterActivity.class);
+        startActivity(intent);
+    }
 }
