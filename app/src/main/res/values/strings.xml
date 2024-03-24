@@ -16,13 +16,15 @@
     <string name="greeting_app">Greeting App</string>
     <string name="say_hello">Say Hello!</string>
     <string name="name_hint">Enter your name</string>
-    <string name="welcme_greeting">Welcome to Greeting App</string>
+    <string name="welcome_greeting">Welcome to Greeting App</string>
 <string name="welcome_counter_app">The Counter App</string>
     <string name="lucky_app">Lucky App</string>
     <string name="click_me">Click Me</string>
     <string name="default_counter">0</string>
     <string name="counter_app">Counter App</string>
-
+    <string name="increment">Increment</string>
+    <string name="decrement">Decrement</string>
+    <string name="reset">Reset</string>
     <string name="luck_hint">Please enter your name</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -60,4 +62,6 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
 </resources>

@@ -28,7 +28,6 @@ public class CounterActivity extends AppCompatActivity {
         decrement = findViewById(R.id.decrement_btn);
         reset = findViewById(R.id.reset_btn);
 
-
         increment.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("SetTextI18n")
             @Override
@@ -60,7 +59,6 @@ public class CounterActivity extends AppCompatActivity {
    }
 
     public int decreaseCounter(){
-
         if(counter > 0) {
             return --counter;
         }
@@ -71,6 +69,4 @@ public class CounterActivity extends AppCompatActivity {
         counter = 0;
         return counter;
     }
-
-
 }

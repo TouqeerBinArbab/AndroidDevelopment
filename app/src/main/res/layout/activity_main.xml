@@ -10,10 +10,14 @@
 
     <Button
         android:id="@+id/greeting_app"
+
         android:layout_width="wrap_content"
+        android:background="@drawable/rounded_button"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:text="@string/greeting_app"
+        android:backgroundTint="@null"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
