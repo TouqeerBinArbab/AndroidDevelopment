@@ -7,6 +7,17 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
+    <string name="luck_btn">Wish me luck!</string>
+    <string name="luck_greeting">Welcome to Lucky Number</string>
+
+    <string name="luck_number_heading">Your lucky number is</string>
+    <string name="share_btn">Share my lucky number</string>
+    <string name="luck_number_place_holder">888</string>
+    <string name="greeting_app">Greeting App</string>
+
+    <string name="lucky_app">Lucky App</string>
+
+    <string name="luck_hint">Please enter your name</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
