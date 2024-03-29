@@ -13,6 +13,12 @@
         android:theme="@style/Theme.AndroidDevelopment"
         tools:targetApi="31">
         <activity
+            android:name=".CustomListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".FrenchTeacherActivity"
             android:exported="false" />
         <activity

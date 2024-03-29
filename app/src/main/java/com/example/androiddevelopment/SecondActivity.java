@@ -39,10 +39,6 @@ public class SecondActivity extends AppCompatActivity {
                 shareData(userName, random_num);
             }
         });
-
-
-
-
     }
 
     public int generateRandomNumber() {
@@ -52,7 +48,6 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     public void shareData(String username, int randomNum){
-
         // Implicit Intent
         Intent i = new Intent(Intent.ACTION_SEND);
         i.setType("text/plain");
@@ -60,7 +55,6 @@ public class SecondActivity extends AppCompatActivity {
         // Additional info
         i.putExtra(Intent.EXTRA_SUBJECT, username + " got lucky today!");
         i.putExtra(Intent.EXTRA_TEXT, "His lucky number is: " + randomNum);
-
         startActivity(Intent.createChooser(i, "Choose your platform"));
     }
 }

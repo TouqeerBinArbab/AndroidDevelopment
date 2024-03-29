@@ -70,4 +70,7 @@
     <string name="purple">Purple</string>
     <string name="green">Green</string>
     <string name="yellow">Yellow</string>
+    <string name="list_view_app">List View App</string>
+    <string name="custom_list_view_app">Custom List View App</string>
+    <string name="item1">item1</string>
 </resources>

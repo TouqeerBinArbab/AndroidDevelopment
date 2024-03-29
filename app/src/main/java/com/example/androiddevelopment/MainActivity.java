@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button luckyAppBtn, greetingAppBtn, counterAppBtn, frenchAppBtn;
+    Button luckyAppBtn, greetingAppBtn, counterAppBtn, frenchAppBtn, listViewAppBtn, customListViewAppBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
         greetingAppBtn = findViewById(R.id.greeting_app);
         counterAppBtn = findViewById(R.id.counter_app);
         frenchAppBtn = findViewById(R.id.french_app);
-
+        listViewAppBtn = findViewById(R.id.list_view_app);
+        customListViewAppBtn = findViewById(R.id.custom_list_view_app);
         luckyAppBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,6 +52,22 @@ public class MainActivity extends AppCompatActivity {
                 goToFrenchTeacherApp();
             }
         });
+
+        listViewAppBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToListViewApp();
+            }
+        });
+
+        customListViewAppBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToCustomListViewApp();
+            }
+        });
+
+
     }
 
     @Override
@@ -89,4 +106,15 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent( getApplicationContext(), FrenchTeacherActivity.class);
         startActivity(intent);
     }
+
+    public void goToListViewApp() {
+        Intent intent = new Intent( getApplicationContext(), ListViewActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToCustomListViewApp() {
+        Intent intent = new Intent( getApplicationContext(), CustomListActivity.class);
+        startActivity(intent);
+    }
+
 }
