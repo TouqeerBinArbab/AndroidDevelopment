@@ -1,7 +1,5 @@
 package com.example.androiddevelopment;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,6 +25,7 @@ public class GreetingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String inputName = editText.getText().toString();
+
                 Toast.makeText(
                         GreetingActivity.this,
                         "Welcome "+inputName +" to our App",

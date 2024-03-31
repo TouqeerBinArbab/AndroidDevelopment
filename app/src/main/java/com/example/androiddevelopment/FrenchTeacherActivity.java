@@ -1,17 +1,13 @@
 package com.example.androiddevelopment;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class FrenchTeacherActivity extends AppCompatActivity implements View.OnClickListener {
-
-
     Button blackBtn, greenBtn, purpleBtn, yellowBtn, redBtn;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,4 +56,3 @@ public class FrenchTeacherActivity extends AppCompatActivity implements View.OnC
         mediaPlayer.start();
     }
 }
-

@@ -10,7 +10,6 @@ import android.widget.TextView;
 public class MyCustomAdapter extends BaseAdapter {
     private Context context;
     private String[] items;
-
     public MyCustomAdapter(Context context, String[] items){
         this.context = context;
         this.items = items;
@@ -34,7 +33,6 @@ public class MyCustomAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
-
         // Reusing the View (that's recycled)
         if(convertView == null) {
             // convertView : is a recycler view that you can reuse to
@@ -55,11 +53,8 @@ public class MyCustomAdapter extends BaseAdapter {
         // Binding data to view within the convertView
         return convertView; // Displays the data at a position in the data set
     }
-
     static  class ViewHolder {
         //  references to the views within an item layout.
-
         TextView textView;
     }
-
 }

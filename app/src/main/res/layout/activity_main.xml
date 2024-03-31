@@ -77,6 +77,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/list_view_app" />
 
+    <Button
+        android:id="@+id/planet_app"
+        android:layout_width="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/planet_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/custom_list_view_app" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

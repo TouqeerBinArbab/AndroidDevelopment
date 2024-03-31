@@ -12,7 +12,14 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button luckyAppBtn, greetingAppBtn, counterAppBtn, frenchAppBtn, listViewAppBtn, customListViewAppBtn;
+    Button
+            luckyAppBtn,
+            greetingAppBtn,
+            counterAppBtn,
+            frenchAppBtn,
+            listViewAppBtn,
+            customListViewAppBtn,
+            planetAppBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         frenchAppBtn = findViewById(R.id.french_app);
         listViewAppBtn = findViewById(R.id.list_view_app);
         customListViewAppBtn = findViewById(R.id.custom_list_view_app);
+        planetAppBtn = findViewById(R.id.planet_app);
+
         luckyAppBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,7 +76,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
+        planetAppBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToPlanetApp();
+            }
+        });
     }
 
     @Override
@@ -114,6 +128,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToCustomListViewApp() {
         Intent intent = new Intent( getApplicationContext(), CustomListActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToPlanetApp() {
+        Intent intent = new Intent( getApplicationContext(), PlanetActivity.class);
         startActivity(intent);
     }
 
