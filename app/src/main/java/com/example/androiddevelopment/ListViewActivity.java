@@ -1,8 +1,12 @@
 package com.example.androiddevelopment;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,6 +40,37 @@ public class ListViewActivity extends AppCompatActivity {
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, countries);
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = null;
+                String item = parent.getItemAtPosition(position)+"";
+
+                switch (position) {
+                    case 0:
+                    intent = new Intent(ListViewActivity.this, GreetingActivity.class);
+                    break;
+
+                    default:
+                        Toast.makeText(ListViewActivity.this, "This is " + item, Toast.LENGTH_SHORT).show();
+                }
+                if(intent != null) {
+                    startActivity(intent);
+                }
+                          }
+        });
+
+
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//
+//                Intent i = new Intent(getActivity(), DiscussAddValu.class);
+//                startActivity(i);
+//            }
+//        });
+
 
     }
 }

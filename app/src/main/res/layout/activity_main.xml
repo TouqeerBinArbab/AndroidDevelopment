@@ -8,85 +8,94 @@
     android:layout_centerInParent="true"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/greeting_app"
-        android:layout_width="wrap_content"
-        android:background="@drawable/rounded_button"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="@string/greeting_app"
-        android:backgroundTint="@null"
+    <ListView
+        android:id="@+id/apps_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <Button
-        android:id="@+id/lucky_app"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="@string/lucky_app"
-        android:background="@drawable/rounded_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/greeting_app" />
-
-    <Button
-        android:id="@+id/counter_app"
-        android:layout_width="wrap_content"
-        android:background="@drawable/rounded_button"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="@string/counter_app"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/lucky_app" />
-
-    <Button
-        android:id="@+id/french_app"
-        android:layout_width="wrap_content"
-        android:background="@drawable/rounded_button"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="@string/french_teacher_app"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/counter_app" />
-
-    <Button
-        android:id="@+id/list_view_app"
-        android:layout_width="wrap_content"
-        android:background="@drawable/rounded_button"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="@string/list_view_app"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/french_app" />
+<!--    <Button-->
+<!--        android:id="@+id/greeting_app"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:background="@drawable/rounded_button"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:text="@string/greeting_app"-->
+<!--        android:backgroundTint="@null"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
 
-    <Button
-        android:id="@+id/custom_list_view_app"
-        android:layout_width="wrap_content"
-        android:background="@drawable/rounded_button"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="@string/custom_list_view_app"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/list_view_app" />
+<!--    <Button-->
+<!--        android:id="@+id/lucky_app"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:text="@string/lucky_app"-->
+<!--        android:background="@drawable/rounded_button"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/greeting_app" />-->
 
-    <Button
-        android:id="@+id/planet_app"
-        android:layout_width="wrap_content"
-        android:background="@drawable/rounded_button"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="@string/planet_app"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/custom_list_view_app" />
+<!--    <Button-->
+<!--        android:id="@+id/counter_app"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:background="@drawable/rounded_button"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:text="@string/counter_app"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/lucky_app" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/french_app"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:background="@drawable/rounded_button"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:text="@string/french_teacher_app"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/counter_app" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/list_view_app"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:background="@drawable/rounded_button"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:text="@string/list_view_app"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/french_app" />-->
+
+
+<!--    <Button-->
+<!--        android:id="@+id/custom_list_view_app"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:background="@drawable/rounded_button"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:text="@string/custom_list_view_app"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/list_view_app" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/planet_app"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:background="@drawable/rounded_button"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:text="@string/planet_app"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/custom_list_view_app" />-->
 
 
 

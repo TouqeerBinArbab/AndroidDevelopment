@@ -33,7 +33,6 @@ public class CounterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counterText.setText("" +increaseCounter());
-
             }
         });
 
